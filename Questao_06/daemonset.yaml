@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx
+  namespace: default
+  labels:
+    run: nginx
+spec:
+  selector:
+    matchLabels:
+      name: nginx
+  template:
+    metadata:
+      labels:
+        name: nginx
+    spec:
+      tolerations:
+      # Este toleration é para garantir que o daemonset poderá rodar também nos nós masters
+       #Para que isto não ocorra (caso o master não possa rodar outros containers) este toleration deve ser removido
+      - key: node-role.kubernetes.io/master
+        operator: Exists
+        effect: Schedule
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          limits:
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
+      terminationGracePeriodSeconds: 30
