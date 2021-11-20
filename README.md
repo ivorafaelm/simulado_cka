@@ -8,7 +8,7 @@ O treinamento é oferecido pela LinuxTips (https://www.linuxtips.io/products/des
 
 ## Questões
 
-- [Questão 01] (Questao_01/questao.md)
-- [Questão 02] (Questao_02/questao.md)
-- [Questão 03] (Questao_03/questao.md)
-- [Questão 04] (Questao_04/questao.md)
+- [Questão 01](Questao_01/questao.md)
+- [Questão 02](Questao_02/questao.md)
+- [Questão 03](Questao_03/questao.md)
+- [Questão 04](Questao_04/questao.md)
