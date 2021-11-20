@@ -14,5 +14,4 @@ O treinamento é oferecido pela LinuxTips (https://www.linuxtips.io/products/des
 - [Questão 04] (Questao_04/questao.md)
 - [Questão 05] (Questao_05/questao.md)
 - [Questão 06] (Questao_06/questao.md)
-- [Questão 06] (Questao_07/questao.md)
-
+- [Questão 07] (Questao_07/questao.md)
