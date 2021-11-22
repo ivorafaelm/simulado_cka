@@ -16,10 +16,10 @@ spec:
     spec:
       tolerations:
       # Este toleration é para garantir que o daemonset poderá rodar também nos nós masters
-       #Para que isto não ocorra (caso o master não possa rodar outros containers) este toleration deve ser removido
+      # Para que isto não ocorra (caso o master não possa rodar outros containers) este toleration deve ser removido
       - key: node-role.kubernetes.io/master
         operator: Exists
-        effect: Schedule
+        effect: NoSchedule
       containers:
       - name: nginx
         image: nginx
