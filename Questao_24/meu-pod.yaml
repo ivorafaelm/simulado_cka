@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meu-pod
+  namespace: default
+spec:
+  containers:
+  - image: nginx
+    name: meu-pod
+    env:
+    - name: USERNAME
+      valueFrom:
+        secretKeyRef:
+          name: my-secret
+          key: user
+    - name: PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: my-secret
+          key: password
